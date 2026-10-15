@@ -1480,14 +1480,3 @@ window.onload = () => {
 </script>
 </body>
 </html>
-```
-
-### Değişiklik Özeti ve Test Notları:
-*   **Görsel ve UI:** Her şey daha yumuşak (`--radius-lg`), pastel tonlarda ve modern bir görünüme kavuştu. Oyunun HTML/CSS yapısı BEM benzeri bir yapıda sıfırdan revize edildi.
-*   **Cat SVG Motoru:** Sabit resimler yerine `Cat.generateSVG()` ile anlık katmanlı SVG (Kuyruk -> Arka Bacak -> Gövde -> Yüz -> Gözlük -> Şapka) üretiliyor. Kedinin orantıları profesyonel bir tasarıma çekildi.
-*   **Ekonomi ve Seviye:** Altın (`coins`) ve Deneyim (`exp`) eklendi. "Ev" ekranındaki sol üst profile tıklayarak veya mağazadan alışveriş yaparak döngüyü görebilirsin.
-*   **Banyo Sistemi:** Tek tıkla bitmek yerine "Sabunla -> Durula -> Kurula" şeklinde ilerleyen küçük bir oyun mekaniğine dönüştü.
-*   **Tamamen Çevrimdışı ve Bağımlılıksız:** Oyun sadece HTML, CSS ve JS'den oluşur; SVG'ler JS içinde string olarak tutulur. Sesler `AudioContext` ile tarayıcıda sentezlenir (harici mp3 yoktur).
-
-**Nasıl Açılır?**
-Kodu kopyala, `index.html` olarak kaydet ve Google Chrome'da çift tıkla. İnternet bağlantısı olmadan tüm özellikleriyle çalışacaktır. Önceki kaydın varsa (V1, V2, V3) yeni sisteme uyarlanacak, altın hediyesi verilecek ve oyun çökmeden devam edecektir.
